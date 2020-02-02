@@ -1,0 +1,47 @@
+
+############## MEDIA AND DATA FILES ##############
+*.pdf
+*.png
+*.jpg
+*.json
+*.csv
+*.mp4
+
+############## COMPILED FILES ##############
+*.o
+*.so
+*.pyc
+*.pyd
+
+############## MACHINE SPECIFIC ##############
+.vscode/
+.idea/
+.eggs/
+*.egg-info/
+.DS_Store
+
+############## LOCAL FILES ##############
+crfnet/playground/
+crfnet/snapshots/
+crfnet/out/
+crfnet/feature_visualization/
+crfnet/tb_logs/*
+crfnet/saved_models/*
+crfnet/data/tools/anchor_data/
+crfnet/build/
+crfnet/archive/
+crfnet/experiments/
+
+############## CONFIG FILES ############
+crfnet/configs/*
+crfnet/configs/neural_filter/*
+
+############## Exceptions ##############
+!crfnet/configs/neural_filter
+!crfnet/configs/default.cfg
+!crfnet/configs/neural_filter/default.json.example
+!crfnet/configs/README.md
+!crfnet/images/*.png
+!crfnet/tb_logs/.gitkeep 
+!crfnet/saved_models/.gitkeep 
+*.code-workspace

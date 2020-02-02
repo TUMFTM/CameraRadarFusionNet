@@ -1,0 +1,3 @@
+[submodule "nuscenes-devkit"]
+	path = crfnet/nuscenes-devkit
+	url = https://github.com/Fellfalla/nuscenes-devkit.git
