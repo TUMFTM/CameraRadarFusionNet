@@ -128,7 +128,7 @@ def create_models(backbone_retinanet, num_classes, weights, multi_gpu=0,
         from keras.utils import multi_gpu_model
         
         with tf.device('/cpu:0'):
-            model = model_with_weights(backbone_retinanet(num_classes, num_anchors=num_anchors, modifier=modifier, inputs=inputs, distance=distance), weights=weights, skip_mismatch=True, config=copy.deepcopy(cfg), num_classes=num_classes)
+            model = model_with_weights(backbone_retinanet(num_classes, num_anchors=num_anchors, modifier=modifier, inputs=inputs, distance=distance,cfg = cfg), weights=weights, skip_mismatch=True, config=copy.deepcopy(cfg), num_classes=num_classes)
         
         training_model = multi_gpu_model(model, gpus=multi_gpu)
     else:
