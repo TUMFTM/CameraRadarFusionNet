@@ -9,6 +9,9 @@ Original Source: https://github.com/fizyr/keras-retinanet
 import numpy as np
 import keras
 
+import pyximport
+pyximport.install()
+
 #from .anchor import bbox_transform
 from ..utils.compute_overlap import compute_overlap
 
