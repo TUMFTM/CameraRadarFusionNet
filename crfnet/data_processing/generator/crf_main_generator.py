@@ -77,8 +77,7 @@ def create_generators(cfg, backbone):
       nusc = NuScenes(version='v1.0-mini', dataroot=cfg.data_path, verbose=True)
     else:
       try:
-        #nusc = NuScenes(version='v1.0-trainval', dataroot=cfg.data_path, verbose=True)
-        nusc = NuScenes(version='v1.0-mini', dataroot=cfg.data_path, verbose=True)
+        nusc = NuScenes(version='v1.0-trainval', dataroot=cfg.data_path, verbose=True)
       except ValueError:
         nusc = NuScenes(version='v1.0-mini', dataroot=cfg.data_path, verbose=True)
 

@@ -45,6 +45,3 @@ crfnet/configs/neural_filter/*
 !crfnet/tb_logs/.gitkeep 
 !crfnet/saved_models/.gitkeep 
 *.code-workspace
-
-
-crfnet/code

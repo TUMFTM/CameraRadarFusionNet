@@ -21,9 +21,6 @@ import sys
 
 # Third party imports
 
-import matplotlib 
-matplotlib.use('AGG')#或者PDF, SVG或PS
-
 import keras.preprocessing.image
 import numpy as np
 import matplotlib.pyplot as plt 
