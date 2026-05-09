@@ -238,7 +238,8 @@ if __name__ == '__main__':
             if label in unoccured_labels:
                 continue
             label_name = test_generator.label_to_name(label)
-            eval_data =   np.stack(([label_name]*len(recalls[label]), recalls[label], precisions[label]))
+            if str(recalls[label])!='0':
+                eval_data =   np.stack(([label_name]*len(recalls[label]), recalls[label], precisions[label]))
             np.savetxt(csvFile, np.swapaxes(eval_data, 0, 1), fmt='%s', delimiter=',')
 
 
